@@ -58,6 +58,10 @@ public class ExonNames {
         return  name;
     }
 
+    public String makeHalfOfName(String name){
+     return name.substring(0, name.length()/2);
+    }
+
     //Test output
     public static void main(String[] args) {
         ExonNames names = new ExonNames();
@@ -98,6 +102,9 @@ public class ExonNames {
         System.out.println("Make name clean");
         String awesomName = names.makeNameClean("  ytucki");
         System.out.println(awesomName);
+
+        System.out.println("Make a half of name");
+        System.out.println(names.makeHalfOfName("Dartanike"));
 
     }
 }
